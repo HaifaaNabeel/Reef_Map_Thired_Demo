@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>نظام الإنذار المبكر - تعز (تجريبي)</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-sA+e2kQk6k0gYROC8qk7w6mG6kR6Y+7v+F2z7u3y0u8=" crossorigin=""/>
+
+  <!-- Simple icons (for buttons) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1 class="title">نظام الإنذار المبكر — تعز (تجريبي)</h1>
+      <nav class="nav">
+        <a href="#/" class="navlink" id="nav-map">الخريطة</a>
+        <a href="#/admin" class="navlink" id="nav-admin">لوحة الإدارة</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app">
+    <!-- content injected by app.js -->
+  </main>
+
+  <footer class="footer">
+    <div class="container">نسخة ثابتة تجريبية • بيانات من ملف <code>data.json</code></div>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o9N1j7gk2k3kYk8Z6e5sKxgG6kR6Y+7v+F2z7u3y0u8=" crossorigin=""></script>
+
+  <!-- App script -->
+  <script src="app.js" defer></script>
+</body>
+</html>
